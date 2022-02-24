@@ -40,30 +40,30 @@ A.lenght contains the dimension of the array.
 * Pre: P & R must be between 0 and A.lenght
 ```python
 
-# Binary Search - Divide et Impera
-# P is the start index, R is the end index
-search_index(Dictionary A, Key K, int p, int r)
-    if(p > r):
-        return -1; #Empty
-    else:
-      med = ⌊(p+r)/2⌋ #Floor Division
-        
-        if(A[med].key == k):
-            return med;
-        else if (A[med].key > k):
-            return search_index(A, K, p, med-1) 
-        else:
-            return search_index(A, K, med+1, r)
-    
-# Search with Aux Function
-search(Dictionary A, Key K)
-    i = search_index(A, K, 1, A.length)
-    if(i == -1):
-        return NULL;
-    else
-        return A[i].info
+  # Binary Search - Divide et Impera
+  # P is the start index, R is the end index
+  search_index(Dictionary A, Key K, int p, int r)
+      if(p > r):
+          return -1; #Empty
+      else:
+        med = ⌊(p+r)/2⌋ #Floor Division
+
+          if(A[med].key == k):
+              return med;
+          else if (A[med].key > k):
+              return search_index(A, K, p, med-1)
+          else:
+              return search_index(A, K, med+1, r)
+
+  # Search with Aux Function
+  search(Dictionary A, Key K)
+      i = search_index(A, K, 1, A.length)
+      if(i == -1):
+          return NULL;
+      else
+          return A[i].info
 ```
-* T(n) search_index = O(log(n)) 
+* T(n) search_index = O(log(n))
   * Since we do not have any lower limit, we might find immediately what we are looking for!
 * T(n) search = Theta(1)
 
