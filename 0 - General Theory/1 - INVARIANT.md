@@ -3,7 +3,7 @@
 It is an assertion which is TRUE **before, after and during** any iteration of a cycle
 
 ## Goal
-It is needed to demonstrate:
+It is needed to demonstrate: 
 * A property 
 * Capture the semantics of a while
 * The correctness of a function
