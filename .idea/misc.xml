@@ -6,4 +6,5 @@
       <file path="$PROJECT_DIR$/Exercises/Test" />
     </excludeRoots>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9" project-jdk-type="Python SDK" />
 </project>
